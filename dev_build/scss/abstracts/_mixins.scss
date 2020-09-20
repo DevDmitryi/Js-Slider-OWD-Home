@@ -32,3 +32,140 @@
   }
 }
 
+/// Own Mixins
+/// @author Apelgants Dmitryi
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width + 1}) {
+		@content;
+	}
+}
+
+@mixin laptopL {
+	@media (max-width: #{$laptop-large-width}) {
+		@content;
+	}
+}
+
+@mixin laptopM {
+	@media (max-width: #{$laptop-medium-width}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (max-width: #{$laptop-width}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phoneS {
+	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@mixin fontsize($desktop, $tablet, $phone) {
+  font-size: $desktop !important;
+
+  @include tablet {
+    font-size: $tablet !important;
+  }
+  @include phone {
+    font-size: $phone !important;
+  }
+}
+
+@mixin responsiveD($property, $laptopL, $laptopM, $laptop) {
+	@include laptopL {
+		#{$property}: $laptopL !important;
+	}
+
+	@include laptopM {
+		#{$property}: $laptopM !important;
+	}
+
+	@include laptop {
+		#{$property}: $laptop !important;
+	}
+}
+
+@mixin responsiveM($property, $tablet, $phone, $phoneS) {
+	@include tablet {
+		#{$property}: $tablet !important;
+	}
+
+	@include phone {
+		#{$property}: $phone !important;
+	}
+
+	@include phoneS {
+		#{$property}: $phoneS !important;
+	}
+}
+
+@mixin centerer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flexer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin resizer($width, $height, $value) {
+	@if $value != 0 {
+		width: calc(#{$width * $value}) !important;
+		height: calc(#{$height * $value}) !important;
+	}
+}
+
+@mixin resizerD($width, $height, $valueL, $valueM, $valueS) {
+	width: #{$width} !important;
+	height: #{$height} !important;
+
+	@include laptopL {
+		@include resizer($width, $height, $valueL);
+	}
+
+	@include laptopM {
+		@include resizer($width, $height, $valueM);
+	}
+
+	@include laptop {
+		@include resizer($width, $height, $valueS);
+	}
+}
+
+@mixin resizerM($width, $height, $valueT, $valueP, $valueSP) {
+	width: #{$width} !important;
+	height: #{$height} !important;
+
+	@include tablet {
+		@include resizer($width, $height, $valueT);
+	}
+
+	@include phone {
+		@include resizer($width, $height, $valueP);
+	}
+
+	@include phoneS {
+		@include resizer($width, $height, $valueSP);
+	}
+}

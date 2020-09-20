@@ -19,17 +19,31 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  font-size: inherit;
 }
 
 /**
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $violet-black;
+  transition: .5s ease-in-out;
   text-decoration: none;
+  
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    color: $red;
   }
+}
+
+.red {
+  color: $red;
+}
+
+.violet {
+  color: $violet-medium;
+}
+
+.cyan {
+  color: $cyan;
 }

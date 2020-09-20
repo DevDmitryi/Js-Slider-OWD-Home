@@ -4,3 +4,28 @@
 body {
   font-family: 'Dosis' , sans-serif !important;
 }
+
+h1 {
+  letter-spacing: 1.67px;
+}
+
+h1,
+h2,
+h3 {
+  color: $violet-black;
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+p,
+li {
+  line-height: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+

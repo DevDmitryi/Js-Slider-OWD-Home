@@ -1,0 +1,46 @@
+.wd-blurb {
+    text-align: center;
+    height: 100%;
+    padding-bottom: 6.5625em;    
+    position: relative;
+
+    .wd-blurb__icon {
+        padding: 4em 0;
+    }
+
+    .wd-blurb__title {
+        color: #fff;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        align-self: flex-end;
+        font-size: 2em;
+        padding: 1em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    }
+
+    &.wd-blurb_pink {
+        background-color: $pink;
+
+        .wd-blurb__icon {
+            width: 6.125em;
+        }
+    }
+
+    &.wd-blurb_red {
+        background-color: $red;
+
+        .wd-blurb__icon {
+            width: 7em;
+        }
+    }
+
+    &.wd-blurb_orange {
+        background-color: $orange;
+
+        .wd-blurb__icon {
+            width: 7.125em;
+        }
+    }
+}

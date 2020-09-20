@@ -56,6 +56,7 @@ a {
 .wd-row {
   width: 90%;
   margin: 0 auto;
+  max-width: 1270px;
 }
 
 .wd-row-1-3 {
@@ -63,7 +64,7 @@ a {
 
   .wd-col {
     width: 30%;
-    margin-right: 3.3333%;
+    margin-right: 5%;
 
     &:last-child {
       margin-right: 0;

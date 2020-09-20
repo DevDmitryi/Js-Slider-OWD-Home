@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.wd-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .wd-section {
+        width: 100%;
+    }
+
+    .wd-row {
+        width: 95%;
+        max-width: 100%;
+    }
+}

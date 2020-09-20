@@ -1,0 +1,29 @@
+.wd-social {
+    width: 50px;        
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+
+    .wd-social__wrapper {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        border-radius: 0 3px 3px 0;
+        background-color: $violet-dark;
+        top: 41%;
+        position: absolute;
+        padding: .2em 0;
+    }
+
+    .wd-social__link {
+        display: block;
+        padding: .7em .8em;   
+
+        &:hover {
+            background-color: darken($violet-dark, $amount: 10%);
+        }
+        img {
+            width: 24px;
+        }
+    }
+}

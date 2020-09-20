@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.wd-button {
+
+}
+
+.wd-button_style-1 { 
+    
+    text-align: center;    
+
+    .wd-button__link {
+        color: #fff;
+        background-color: $violet-medium;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding: .7em 1.4em;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.5em;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            border-radius: 36px;
+            border: 1px solid $violet-medium;
+            width: 120%;
+            height: 140%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: .5s ease-in-out;
+        }
+
+        &:hover {
+            background: $pink;
+
+            &::after {
+                border: 1px solid $pink;
+
+            }
+        }
+
+
+        .wd-button__image {
+            width: 0.888em;
+            margin-left: .7em;
+        }
+    }
+}
+
+.wd-button_style-2 {
+
+}

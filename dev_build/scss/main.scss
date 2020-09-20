@@ -25,7 +25,12 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/social',
+  'components/menus',
+  'components/logo',
+  'components/titles',
+  'components/buttons',
+  'components/blurbs';
 
 // 6. Page-specific styles
 @import

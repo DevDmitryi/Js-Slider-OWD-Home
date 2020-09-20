@@ -1,0 +1,14 @@
+.wd-quote {
+    font-weight: 700;
+    font-size: 1.875em;
+
+    .wd-quote__text {
+        color: $violet-black;
+        line-height: 1.4em;
+    }
+
+    .wd-quote__author {
+        color: $pink;
+        text-align: right;
+    }
+}

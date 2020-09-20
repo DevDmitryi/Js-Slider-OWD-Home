@@ -1,0 +1,52 @@
+.wd-form {
+    .wd-form__form {
+        display: flex;
+        flex-direction: column;
+
+        .wd-form__field {
+            width: 100%;
+            border-radius: 4px;
+            border: 2px solid #dcdcdc;
+            color: $violet-extra-dark;
+            letter-spacing: 0.69px;
+            font-weight: 700;
+            padding: .6em .7em;
+            margin-bottom: .8em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::placeholder {
+                color: $violet-extra-dark;
+                letter-spacing: 0.69px;
+                font-weight: 700;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid darken($color: #dcdcdc, $amount: 15%);
+            }
+        }
+
+        .wd-form__button {
+            border: none;
+            background-color: $violet-medium;
+            text-transform: uppercase;
+            border-radius: 4px;
+            letter-spacing: 0.69px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            transition: .5s all;
+            padding: .8em;
+
+            &:focus,
+            &:hover {
+                outline: none;
+                background-color: darken($color: $violet-medium, $amount: 10%);
+            }
+        }
+    }
+}

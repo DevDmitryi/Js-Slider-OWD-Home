@@ -9,7 +9,8 @@
 // 2. Vendors
 @import
   'vendors/reset',
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/pixel-glass';
 
 // 3. Base stuff
 @import
@@ -30,7 +31,10 @@
   'components/logo',
   'components/titles',
   'components/buttons',
-  'components/blurbs';
+  'components/blurbs',
+  'components/quote',
+  'components/sign',
+  'components/forms';
 
 // 6. Page-specific styles
 @import

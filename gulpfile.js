@@ -13,7 +13,7 @@ function scss() {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dev_build/css/main.css'))
+    .pipe(gulp.dest('./dev_build/css/'))
     .pipe(browserSync.stream());
 }
 
@@ -21,7 +21,7 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: "./dev_build",
-            index: "/index.html"
+            index: "index.html"
         }
     });
     gulp.watch('./dev_build/scss/**/*.scss', scss)

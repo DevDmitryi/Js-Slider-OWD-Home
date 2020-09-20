@@ -1,5 +1,6 @@
 <h1>Тестовое стажировочное задание для Purrweb</h1>
 <h2><strong>Верстка</strong></h2>
+<img src="./dev_build/images/owd_home.png" alt="site-image">
 <p>Вот ссылка на макет главной страницы одного из сайтов, которые мы делали -<a href="https://www.dropbox.com/sh/l6vphuoob6bzzf1/AAA7hXuqUzESXpNYa-es6HNya?dl=0"> https://www.dropbox.com/sh/l6vphuoob6bzzf1/AAA7hXuqUzESXpNYa-es6HNya?dl=0</a>. Нужно сверстать сайт по этому макету.</p>
 <p>Требования:</p>
 <ul>

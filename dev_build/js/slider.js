@@ -1,9 +1,13 @@
 $( document ).ready(function() {
+    
+    /* ------ SLIDER SETTINGS ------*/
+
+    const slidesToShow = 3;      // number of slides on one screen
+    const slidesToScroll = 2;    // number of slides to scroll at once
+
+    /* -----------------------------*/
 
     let position = 0;
-    const slidesToShow = 3;
-    const slidesToScroll = 2;
-
     const sliderContainer = $(`.wd-slider`);
     const sliderWrapper = $(`.wd-slider__slide-wrapper`);
     const sliderItem = $(`.wd-slider__item`);
@@ -13,7 +17,7 @@ $( document ).ready(function() {
     const nextBtn = $(`.wd-slider__next-button`);
 
     const sliderItemWidth =  sliderContainer.width() / slidesToShow;
-    const movePosition = slidesToScroll * sliderItemWidth;
+    const movePosition = slidesToScroll * sliderItemWidth;    
 
     sliderItem.each(function(index,item){
         $(item).css({
@@ -48,10 +52,11 @@ $( document ).ready(function() {
             if (currentPos > position) {
                 clearInterval(sliderInterval);
                 checkButtons(false);
-            } else {
+            } else {      
                 sliderWrapper.css({
                     transform: `translateX(${currentPos++}px)`
                 }); 
+
                 checkButtons(true);                
             }                       
         }
@@ -70,7 +75,7 @@ $( document ).ready(function() {
                 checkButtons(false);
             } else {
                 sliderWrapper.css({
-                    transform: `translateX(${currentPos--}px)`
+                    transform: `translateX(${currentPos--}px)`,
                 }); 
                 checkButtons(true);
             }            
@@ -92,13 +97,13 @@ $( document ).ready(function() {
 
     /* ----------------------- */
 
-    // function checkButtons() {
-    //     prevBtn.prop('disabled', position === 0);
-    //     nextBtn.prop(
-    //         'disabled', 
-    //         position <= -(sliderItemCount - slidesToShow) * sliderItemWidth
-    //     );
-    // }   
+    /* function checkButtons() {
+        prevBtn.prop('disabled', position === 0);
+        nextBtn.prop(
+            'disabled', 
+            position <= -(sliderItemCount - slidesToShow) * sliderItemWidth
+        );
+    }   */ 
 
     prevBtn.click(function() {        
         const sliderItemsLeft = Math.abs(position) / sliderItemWidth;

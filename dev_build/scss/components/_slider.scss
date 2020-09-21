@@ -1,18 +1,56 @@
-.wd-slider {
-    width: 1200px;
+.wd-slider.one {
+    
     overflow: hidden;
     background-color: $pink;
 
     .wd-slider__slide-wrapper {
         display: flex;
         background-color: $yellow;
+        position: relative;
 
         .wd-slider__item {
-            min-width: 400px;
+           
         }
 
         .wd-slider__image {
 
+        }
+    }
+
+    .wd-slider__dots {
+
+    }
+
+    .wd-slider__controls {
+        .wd-slider__prev-button {
+
+        }
+
+        .wd-slider__next-button {
+
+        }
+    }
+}
+
+.wd-slider {
+    
+   background-color: $pink;
+    
+
+    .wd-slider__slide-wrapper {
+        
+        background-color: $yellow;
+        position: relative;
+
+        .wd-slider__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 400px;
+            height: 100%;
+        }
+
+        .wd-slider__image {
         }
     }
 

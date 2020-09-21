@@ -53,6 +53,24 @@
     }
 }
 
-.wd-button_style-2 {
+.wd-button_style-2 {   
 
+    .wd-button__link { 
+        border-radius: 3px;
+        background-color: #e22028;
+        background-image: linear-gradient(to right, #e22028 0%, #f9b416 100%);
+        color: #fff;
+        font-size: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.5em;
+        padding: .48em 1.5em;
+        cursor: pointer;
+
+        &:hover {
+            background-image: linear-gradient(to left, #e22028 0%, #f9b416 100%);
+        }
+    }
 }

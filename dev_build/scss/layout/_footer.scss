@@ -1,3 +1,39 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.wd-footer {
+    .wd-newsletter-section {
+        padding: 33px 0;
+        .wd-row {
+            max-width: 578px;
+        }
+    }
+
+    .wd-footer-menu-section {
+        background-color: $grey-extra-light;
+        padding: 25px 0;
+
+        .wd-row {
+            max-width: 850px;
+        }
+    }
+
+    .wd-flags-section {
+
+        .wd-row {
+            max-width: 720px;
+        }
+
+        .wd-flags {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 23px 0;
+        }
+
+        .wd-copyright {
+            text-align: center;
+            padding: 14px 0;
+        }
+    }   
+    
+}

@@ -1,0 +1,20 @@
+.wd-footer-menu {
+    .wd-footer-menu__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wd-footer-menu__item {
+        margin: 0 2%;
+    }
+
+    .wd-footer-menu__link {
+        color: $violet-black;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+}

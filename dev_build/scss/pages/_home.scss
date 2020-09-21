@@ -89,6 +89,53 @@
 }
 
 .wd-join-section {
-    background: url(../images/owd_join-bg.jpg) no-repeat;
+    background: url(../images/owd_join-bg.jpg) center no-repeat;
     background-size: cover;
+    padding: 170px 0;
+
+    .wd-started-row {
+        text-align: center;
+    }
+
+    .wd-col {
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 2em;
+        height: 371px;
+        width: 371px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+
+        @include flexer;
+        flex-direction: column;
+        
+        &::after {
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            border: 1px solid #fff;
+            width: 126%;
+            height: 126%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .4;
+            z-index: -1;
+        }
+    }
+
+    .wd-title {
+
+        .wd-title__title {
+            font-size: 3.75em;
+            color: $violet-extra-dark;
+            margin-bottom: -.1em;
+        }
+
+        .wd-title__caption {
+            margin-bottom: .3em;
+        }
+        
+    }
 }

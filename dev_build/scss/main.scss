@@ -38,12 +38,14 @@
   'components/newsletter',
   'components/footer-menu',
   'components/flags',
-  'components/copyright';
+  'components/copyright',
+  'components/slider';
 
 // 6. Page-specific styles
 @import
   'pages/index',
-  'pages/home';
+  'pages/home',
+  'pages/slider';
 
 // 7. Themes
 @import

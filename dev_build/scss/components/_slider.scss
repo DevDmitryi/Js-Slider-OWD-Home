@@ -1,0 +1,32 @@
+.wd-slider {
+    width: 1200px;
+    overflow: hidden;
+    background-color: $pink;
+
+    .wd-slider__slide-wrapper {
+        display: flex;
+        background-color: $yellow;
+
+        .wd-slider__item {
+            min-width: 400px;
+        }
+
+        .wd-slider__image {
+
+        }
+    }
+
+    .wd-slider__dots {
+
+    }
+
+    .wd-slider__controls {
+        .wd-slider__prev-button {
+
+        }
+
+        .wd-slider__next-button {
+
+        }
+    }
+}

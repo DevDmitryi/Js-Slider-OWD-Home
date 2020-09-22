@@ -54,46 +54,5 @@ $( document ).ready(function() {
         draw();        
     }    
 
-
-    function setTransitionPrev(resultPosition, position) {
-        let sliderInterval = setInterval(setAnimation, 1);
-        let currentPos = position - resultPosition; 
-
-        function setAnimation() {
-            if (currentPos > position) {
-                clearInterval(sliderInterval);
-                checkButtons(false);
-            } else {      
-                sliderWrapper.css({
-                    transform: `translateX(${currentPos++}px)`
-                }); 
-
-                checkButtons(true);                
-            }                       
-        }
-
-        checkButtons(); 
-    }
-
-    function setTransitionNext(resultPosition, position) {     
-    
-        let sliderInterval = setInterval(setAnimation, 1);
-        let currentPos = position + resultPosition; 
-
-        function setAnimation() {
-            if (currentPos < position) {
-                clearInterval(sliderInterval);
-                checkButtons(false);
-            } else {
-                sliderWrapper.css({
-                    transform: `translateX(${currentPos--}px)`,
-                }); 
-                checkButtons(true);
-            }            
-        }
-        
-        checkButtons();
-    }
-
     document.onclick = left;
 });

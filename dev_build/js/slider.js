@@ -44,6 +44,24 @@ $( document ).ready(function() {
         });       
     }
 
+    let count = 0;
+    let count2 = 0;
+
+    // function addActive() {
+    //     sliderItem.removeClass('active');
+        
+    //     for(let i = count2; i<slidesToShow; i++) {
+    //         sliderItem.eq(i).addClass('active');
+    //         console.log(i)
+    //     }
+
+    //     count ++; 
+    //     count2 = slidesToScroll * count;
+    //     console.log(count2)
+    // }
+
+    // addActive();
+
     function setTransitionPrev(resultPosition, position) {
         let sliderInterval = setInterval(setAnimation, 1);
         let currentPos = position - resultPosition; 
@@ -118,6 +136,7 @@ $( document ).ready(function() {
         let resultPosition = sliderItemsLeft >= slidesToScroll ? movePosition : sliderItemsLeft * sliderItemWidth;
         position -= resultPosition;
         setTransitionNext(resultPosition, position); 
+        // addActive();
         checkButtons();
     });
 

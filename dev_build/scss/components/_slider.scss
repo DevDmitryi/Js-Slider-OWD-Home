@@ -1,4 +1,4 @@
-.wd-slider.one {
+.wd-slider {
     
     overflow: hidden;
     background-color: $pink;
@@ -32,7 +32,7 @@
     }
 }
 
-.wd-slider {
+.wd-slider.one {
     
    background-color: $pink;
     
@@ -41,6 +41,7 @@
         
         background-color: $yellow;
         position: relative;
+        height: 300px;
 
         .wd-slider__item {
             position: absolute;
